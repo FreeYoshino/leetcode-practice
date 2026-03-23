@@ -1,0 +1,12 @@
+node_modules/
+
+# Editor directories and files (VS Code 等編輯器的暫存或設定)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
