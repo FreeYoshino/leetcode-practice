@@ -1,7 +1,7 @@
 /**
  * 題號： 15
  * 標題： 3Sum
- * 連結： https://leetcode.com/problems/3sum/solutions/6284786/best-solution-ever-python-java-c-c-javas-riwx/
+ * 連結： https://leetcode.com/problems/3sum/description/
  * 時間複雜度： O(n^2)
  * - n 為輸入陣列的長度
  * - 排序需 O(n log n) 外層迴圈配合雙指標掃描需 O(n^2) 取最高階O(n^2)
