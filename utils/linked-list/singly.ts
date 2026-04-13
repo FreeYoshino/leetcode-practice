@@ -31,3 +31,29 @@ export function listToArray(head: ListNode | null): number[] {
   }
   return result;
 }
+
+export function createListWithCycle(
+  arr: number[],
+  pos: number,
+): ListNode | null {
+  if (arr.length === 0) return null;
+
+  const head = new ListNode(arr[0]);
+  let curr = head;
+  let cycleNode: ListNode | null = null;
+
+  if (pos === 0) cycleNode = head;
+
+  for (let i = 1; i < arr.length; i++) {
+    curr.next = new ListNode(arr[i]);
+    curr = curr.next;
+
+    if (i === pos) {
+      cycleNode = curr;
+    }
+  }
+
+  curr.next = cycleNode;
+
+  return head;
+}
