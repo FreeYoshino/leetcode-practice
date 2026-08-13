@@ -2,10 +2,10 @@
  * 題號：2213
  * 題目：Longest Substring of One Repeating Character
  * 連結：https://leetcode.com/problems/longest-substring-of-one-repeating-character/description/
- * 時間複雜度：O((n + q) log n)
+ * 時間複雜度：O(n + k log n)
  * - 建立線段樹需要走訪整個字串一次，建樹為 O(n)
  * - 每次更新只會沿著樹高往下修改受影響的節點，再往上合併，為 O(log n)
- * - 一共有 k 次查詢，因此總時間複雜度為 O(n + k log n)，也可寫成 O((n + k) log n)
+ * - 一共有 k 次查詢，因此總時間複雜度為 O(n + k log n)
  *
  * 空間複雜度：O(n)
  * - 線段樹陣列會配置約 4n 的空間來儲存每個節點資訊，因此為 O(n)
